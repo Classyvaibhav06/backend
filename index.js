@@ -6,8 +6,10 @@ const app =express();
 //   next();
 // })
 
+app.set("view engine","ejs");
+
 app.get('/',(req,res)=>{
-  res.send("hello vaibhav jii!")
+  res.render("index")
 })
 
 //dynamic route

@@ -1,3 +1,4 @@
+
 # 🗒️ Simple File-Based Notes App
 
 A lightweight note-taking application built with Node.js, Express, EJS, and the File System module. Designed for backend beginners, this app lets you easily create, view, and delete text notes—each stored as a `.txt` file on the server. No databases, just handy file storage.
@@ -18,16 +19,18 @@ A lightweight note-taking application built with Node.js, Express, EJS, and the 
 
 ```
 backend/
-│  index.js           # Main server file
+│  app.js
+│  usermodel.js
 │  package.json
-│  noteweb
-├── public/           # Static assets (CSS, images)
-├── views/            # EJS templates (index, show, etc.)
-└── files/            # Stores the note .txt files
+└── noteweb/
+   ├── index.js          # Main server file
+   ├── package.json
+   ├── public/           # Static assets (CSS)
+   │  └── stylesheets/
+   └── views/            # EJS templates (index, show)
 ```
 
 ---
-
 ## 🛠️ Tech Stack
 
 - **Node.js**
